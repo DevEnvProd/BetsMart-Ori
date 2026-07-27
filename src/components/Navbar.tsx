@@ -10,6 +10,7 @@ const navLinks = [
   { name: 'Budget Tools', path: '/budget-tools' },
   { name: 'Warning Signs', path: '/warning-signs' },
   { name: 'Education', path: '/education' },
+  { name: 'Blog', path: '/blog' },
   { name: 'Help Directory', path: '/help-directory' },
   { name: 'For Families', path: '/for-families' },
   { name: 'About', path: '/about' },

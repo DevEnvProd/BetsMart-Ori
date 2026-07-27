@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { BookOpen, Star, AlertTriangle, CheckCircle, ArrowRight, Info, PlayCircle, HelpCircle, ChevronDown, ChevronUp, Shield, ExternalLink } from 'lucide-react';
+import { BookOpen, Star, AlertTriangle, CheckCircle, ArrowRight, Info, PlayCircle, HelpCircle, ChevronDown, ChevronUp, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 
 const myths = [
@@ -136,7 +137,7 @@ export default function Education() {
                 ))}
               </div>
               <p className="text-xs text-gray-500 text-center italic">
-                *Platinum Casino provides transparent RTP (Return to Player) data for all games.
+                *Winbox provides transparent RTP (Return to Player) data for all games.
               </p>
             </Card>
           </div>
@@ -220,7 +221,7 @@ export default function Education() {
             </div>
             <div className="absolute bottom-8 left-8 right-8 text-white z-10">
               <div className="text-xs font-black uppercase tracking-widest mb-2 text-white/60">Featured Video</div>
-              <div className="text-xl font-bold">Understanding RTP: Examples from Platinum Casino</div>
+              <div className="text-xl font-bold">Understanding RTP: Examples from Winbox</div>
             </div>
           </div>
         </div>
@@ -237,7 +238,7 @@ export default function Education() {
             },
             {
               q: "Is online gambling safe?",
-              a: "Only if you use licensed and regulated platforms like Platinum Casino. Unlicensed sites offer no protection for your funds or data."
+              a: "Only if you use licensed and regulated platforms like Winbox. Unlicensed sites offer no protection for your funds or data."
             },
             {
               q: "What is RTP?",
@@ -259,17 +260,17 @@ export default function Education() {
         </div>
       </section>
 
-      {/* Platinum Casino Integration */}
+      {/* Winbox Integration */}
       <section className="bg-primary rounded-[3rem] p-12 text-white text-center space-y-8 shadow-xl">
-        <h3 className="text-2xl md:text-3xl font-heading font-black">Learn More at Platinum Casino</h3>
+        <h3 className="text-2xl md:text-3xl font-heading font-black">Learn More at Winbox</h3>
         <p className="text-white/80 max-w-2xl mx-auto">
-          Platinum Casino provides detailed educational resources for all their games, including specific RTP data and game mechanics.
+          Winbox provides detailed educational resources for all their games, including specific RTP data and game mechanics.
         </p>
         <div className="flex justify-center">
-          <a href="#" className="bg-white text-primary px-8 py-4 rounded-full font-black text-lg hover:bg-gray-100 transition-all flex items-center gap-2">
-            Visit Platinum Casino Education Center
-            <ExternalLink className="w-5 h-5" />
-          </a>
+          <Link to="/help-directory" className="bg-white text-primary px-8 py-4 rounded-full font-black text-lg hover:bg-gray-100 transition-all flex items-center gap-2">
+            Visit Winbox Education Center
+            <ArrowRight className="w-5 h-5" />
+          </Link>
         </div>
       </section>
     </div>

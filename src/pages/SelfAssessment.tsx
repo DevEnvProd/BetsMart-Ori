@@ -85,14 +85,14 @@ export default function SelfAssessment() {
       color: "text-secondary",
       bg: "bg-secondary/10",
       desc: "You have a low level of problems with few or no identified negative consequences.",
-      advice: "Be mindful of your habits. It's a good time to set firm limits at Platinum Casino to ensure you stay in this category."
+      advice: "Be mindful of your habits. It's a good time to set firm limits at Winbox to ensure you stay in this category."
     };
     if (score >= 3 && score <= 7) return {
       level: "Moderate Risk",
       color: "text-accent",
       bg: "bg-accent/10",
       desc: "You are experiencing a moderate level of problems leading to some negative consequences.",
-      advice: "We recommend taking a break. Consider using the self-exclusion tools at Platinum Casino for a few weeks to reset."
+      advice: "We recommend taking a break. Consider using the self-exclusion tools at Winbox for a few weeks to reset."
     };
     return {
       level: "High Risk / Problem Gambling",
@@ -215,10 +215,10 @@ export default function SelfAssessment() {
             <Card className="bg-secondary text-white">
               <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Shield className="w-6 h-6" />
-                Safe Play at Platinum Casino
+                Safe Play at Winbox
               </h3>
               <p className="text-white/80 text-sm mb-6">
-                Regardless of your score, setting limits is the best way to ensure gambling remains entertainment. Platinum Casino offers easy-to-use tools for all players.
+                Regardless of your score, setting limits is the best way to ensure gambling remains entertainment. Winbox offers easy-to-use tools for all players.
               </p>
               <Link to="/budget-tools" className="inline-flex items-center gap-2 font-bold hover:underline">
                 Learn how to set limits <ChevronRight className="w-4 h-4" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, ArrowRight, CheckCircle, AlertTriangle, Calculator, BookOpen, Users, Star, ExternalLink, PlayCircle } from 'lucide-react';
+import { Shield, ArrowRight, CheckCircle, AlertTriangle, Calculator, BookOpen, Users, Star, PlayCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 
@@ -123,10 +123,10 @@ export default function Home() {
               </div>
               <h2 className="text-4xl font-heading font-black text-gray-900 leading-tight">
                 Why We Recommend <br />
-                <span className="text-secondary">Platinum Casino</span>
+                <span className="text-secondary">Winbox</span>
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Platinum Casino is a fully licensed and regulated platform that prioritizes player safety. They provide industry-leading tools for setting deposit limits, session timers, and self-exclusion.
+                Winbox is a fully licensed and regulated platform that prioritizes player safety. They provide industry-leading tools for setting deposit limits, session timers, and self-exclusion.
               </p>
               <ul className="space-y-4">
                 {[
@@ -143,10 +143,10 @@ export default function Home() {
               </ul>
               <div className="flex gap-4 pt-4">
                 <Link to="/education" className="btn-secondary">Read Case Study</Link>
-                <a href="#" className="btn-outline flex items-center gap-2">
-                  Visit Platinum Casino
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                <Link to="/help-directory" className="btn-outline flex items-center gap-2">
+                  Visit Winbox Support
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
             <div className="lg:w-1/2">
@@ -155,8 +155,8 @@ export default function Home() {
                 <div className="relative bg-white p-8 rounded-3xl shadow-xl border border-gray-100">
                   <div className="flex items-center justify-between mb-8">
                     <div className="flex items-center gap-3">
-                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white font-black text-xl">P</div>
-                      <div className="font-heading font-bold text-xl">Platinum Casino</div>
+                      <div className="w-12 h-12 bg-secondary rounded-xl flex items-center justify-center text-white font-black text-xl">W</div>
+                      <div className="font-heading font-bold text-xl">Winbox</div>
                     </div>
                     <div className="bg-positive/10 text-positive px-3 py-1 rounded-full text-xs font-bold">LICENSED</div>
                   </div>
@@ -249,7 +249,7 @@ export default function Home() {
                 {[1, 2, 3, 4, 5].map(s => <Star key={s} className="w-4 h-4 fill-accent" />)}
               </div>
               <p className="text-lg italic text-gray-700 mb-6">
-                "I used to think I could win back what I lost. The budget tools here helped me realize I was chasing ghosts. Now I play for fun, once a month, with a strict limit at Platinum Casino."
+                "I used to think I could win back what I lost. The budget tools here helped me realize I was chasing ghosts. Now I play for fun, once a month, with a strict limit at Winbox."
               </p>
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-gray-200 rounded-full" />

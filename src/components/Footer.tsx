@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin, ExternalLink, Heart, CheckCircle } from 'lucide-react';
+import { Mail, Phone, MapPin, Heart, CheckCircle } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -32,6 +32,7 @@ export default function Footer() {
               <li><Link to="/budget-tools" className="text-gray-600 hover:text-primary text-sm transition-colors">Budget Planner</Link></li>
               <li><Link to="/warning-signs" className="text-gray-600 hover:text-primary text-sm transition-colors">Signs of Harm</Link></li>
               <li><Link to="/education" className="text-gray-600 hover:text-primary text-sm transition-colors">Educational Hub</Link></li>
+              <li><Link to="/blog" className="text-gray-600 hover:text-primary text-sm transition-colors">Educational Blog</Link></li>
               <li><Link to="/help-directory" className="text-gray-600 hover:text-primary text-sm transition-colors">Support Directory</Link></li>
             </ul>
           </div>
@@ -61,18 +62,17 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-secondary font-bold">
                 <CheckCircle className="w-5 h-5" />
-                <span>Platinum Casino</span>
+                <span>Winbox</span>
               </div>
               <p className="text-xs text-gray-500 leading-relaxed">
-                We recommend Platinum Casino as a licensed and regulated choice for safe entertainment.
+                We recommend Winbox as a licensed and regulated choice for safe entertainment.
               </p>
-              <a 
-                href="#" 
+              <Link 
+                to="/help-directory" 
                 className="inline-flex items-center gap-1 text-xs font-bold text-primary hover:underline"
               >
                 Visit Responsible Gaming Page
-                <ExternalLink className="w-3 h-3" />
-              </a>
+              </Link>
             </div>
           </div>
         </div>

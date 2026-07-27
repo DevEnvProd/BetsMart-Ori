@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { PhoneCall, MessageSquare, MapPin, Globe, Shield, ArrowRight, Search, Info, ExternalLink, Users, Heart, AlertCircle, CheckCircle } from 'lucide-react';
+import { PhoneCall, MessageSquare, MapPin, Globe, Shield, ArrowRight, Search, Info, Users, Heart, AlertCircle, CheckCircle } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 import { Link } from 'react-router-dom';
 
@@ -112,7 +112,7 @@ export default function HelpDirectory() {
             <div className="space-y-4">
               <div className="p-4 bg-bg-soft rounded-2xl border border-gray-100 flex items-center gap-4">
                 <CheckCircle className="w-6 h-6 text-positive shrink-0" />
-                <p className="text-sm font-bold text-gray-700">Platinum Casino Self-Exclusion Program</p>
+                <p className="text-sm font-bold text-gray-700">Winbox Self-Exclusion Program</p>
               </div>
               <div className="p-4 bg-bg-soft rounded-2xl border border-gray-100 flex items-center gap-4">
                 <CheckCircle className="w-6 h-6 text-positive shrink-0" />

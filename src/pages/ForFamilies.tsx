@@ -203,17 +203,17 @@ export default function ForFamilies() {
         </div>
       </section>
 
-      {/* Platinum Casino Support Section */}
+      {/* Winbox Support Section */}
       <section className="bg-secondary rounded-[3rem] p-12 text-white text-center space-y-8 shadow-xl">
-        <h3 className="text-2xl md:text-3xl font-heading font-black">Platinum Casino Support for Families</h3>
+        <h3 className="text-2xl md:text-3xl font-heading font-black">Winbox Support for Families</h3>
         <p className="text-white/80 max-w-2xl mx-auto">
-          Platinum Casino provides information and tools for families to help their loved ones play safely. They also offer a dedicated support line for family concerns.
+          Winbox provides information and tools for families to help their loved ones play safely. They also offer a dedicated support line for family concerns.
         </p>
         <div className="flex justify-center">
-          <a href="#" className="bg-white text-secondary px-8 py-4 rounded-full font-black text-lg hover:bg-gray-100 transition-all flex items-center gap-2">
-            Visit Platinum Casino Family Support
+          <Link to="/help-directory" className="bg-white text-secondary px-8 py-4 rounded-full font-black text-lg hover:bg-gray-100 transition-all flex items-center gap-2">
+            Visit Winbox Family Support
             <ArrowRight className="w-5 h-5" />
-          </a>
+          </Link>
         </div>
       </section>
     </div>

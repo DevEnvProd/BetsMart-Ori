@@ -1,5 +1,6 @@
 {
-  "name": "BETSMART PORTAL",
-  "description": "Professional responsible gambling educational portal website. Play safe. Stay in control. Know your limits.",
-  "requestFramePermissions": []
+  "name": "BetsMart Portal",
+  "description": "BetsMart Portal | Best Gambling Portal in ASEAN - Professional responsible gambling educational portal. Play safe, stay in control, and know your limits with our tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

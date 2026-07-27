@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Calculator, Clock, TrendingDown, CheckCircle, ArrowRight, Download, Info, DollarSign, Timer, AlertCircle, ExternalLink } from 'lucide-react';
+import { Shield, Calculator, Clock, TrendingDown, CheckCircle, ArrowRight, Download, Info, DollarSign, Timer, AlertCircle } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 
 export default function BudgetTools() {
@@ -124,7 +125,7 @@ export default function BudgetTools() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3 text-sm text-gray-600">
                     <div className="w-5 h-5 bg-primary/10 text-primary rounded-full flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-black">1</div>
-                    <span>Log in to your <strong>Platinum Casino</strong> account.</span>
+                    <span>Log in to your <strong>Winbox</strong> account.</span>
                   </li>
                   <li className="flex items-start gap-3 text-sm text-gray-600">
                     <div className="w-5 h-5 bg-primary/10 text-primary rounded-full flex items-center justify-center shrink-0 mt-0.5 text-[10px] font-black">2</div>
@@ -135,10 +136,10 @@ export default function BudgetTools() {
                     <span>Set your <strong>Monthly Deposit Limit</strong> to RM {recommendedBudget.toLocaleString()}.</span>
                   </li>
                 </ul>
-                <button className="btn-primary w-full flex items-center justify-center gap-2 mt-6">
-                  Set Limits at Platinum Casino
-                  <ExternalLink className="w-4 h-4" />
-                </button>
+                <Link to="/help-directory" className="btn-primary w-full flex items-center justify-center gap-2 mt-6">
+                  Set Limits at Winbox
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
               </div>
             </div>
           </Card>
@@ -253,18 +254,18 @@ export default function BudgetTools() {
         </div>
       </section>
 
-      {/* Platinum Casino Integration */}
+      {/* Winbox Integration */}
       <section className="bg-bg-soft rounded-[3rem] p-12 border border-gray-200">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <div className="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-widest uppercase">
             <Shield className="w-5 h-5" />
-            PLATINUM CASINO TOOLS
+            WINBOX TOOLS
           </div>
           <h2 className="text-3xl md:text-4xl font-heading font-black text-gray-900">
-            How to Set Limits at Platinum Casino
+            How to Set Limits at Winbox
           </h2>
           <p className="text-lg text-gray-600">
-            Platinum Casino makes it easy to implement the limits you've calculated today. Follow these simple steps to secure your account.
+            Winbox makes it easy to implement the limits you've calculated today. Follow these simple steps to secure your account.
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
@@ -294,10 +295,10 @@ export default function BudgetTools() {
           </div>
 
           <div className="pt-8">
-            <a href="#" className="btn-secondary inline-flex items-center gap-2">
-              Go to Platinum Casino Responsible Gaming
-              <ExternalLink className="w-4 h-4" />
-            </a>
+            <Link to="/help-directory" className="btn-secondary inline-flex items-center gap-2">
+              Go to Winbox Responsible Gaming
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

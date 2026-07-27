@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Shield, Heart, Users, CheckCircle, ArrowRight, Mail, MapPin, Phone, ExternalLink, Star } from 'lucide-react';
+import { Shield, Heart, Users, CheckCircle, ArrowRight, Mail, MapPin, Phone, Star } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Card, CardHeader, CardTitle, CardContent } from '../components/ui/Card';
 
 export default function About() {
@@ -128,17 +129,17 @@ export default function About() {
         <div className="max-w-2xl mx-auto">
           <Card className="p-10 border-2 border-secondary/20 space-y-8">
             <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 bg-secondary text-white rounded-2xl flex items-center justify-center font-black text-3xl">P</div>
-              <div className="text-3xl font-heading font-bold text-gray-900">Platinum Casino</div>
+              <div className="w-16 h-16 bg-secondary text-white rounded-2xl flex items-center justify-center font-black text-3xl">W</div>
+              <div className="text-3xl font-heading font-bold text-gray-900">Winbox</div>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Platinum Casino is a key partner in our mission. They provide industry-leading responsible gambling tools and support our educational initiatives.
+              Winbox is a key partner in our mission. They provide industry-leading responsible gambling tools and support our educational initiatives.
             </p>
             <div className="flex justify-center">
-              <a href="#" className="btn-secondary flex items-center gap-2">
-                Visit Platinum Casino Responsible Gaming
-                <ExternalLink className="w-4 h-4" />
-              </a>
+              <Link to="/help-directory" className="btn-secondary flex items-center gap-2">
+                Visit Winbox Responsible Gaming
+                <ArrowRight className="w-4 h-4" />
+              </Link>
             </div>
           </Card>
         </div>

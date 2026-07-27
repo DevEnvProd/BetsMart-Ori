@@ -13,6 +13,7 @@ import Education from './pages/Education';
 import HelpDirectory from './pages/HelpDirectory';
 import ForFamilies from './pages/ForFamilies';
 import About from './pages/About';
+import Blog from './pages/Blog';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/self-assessment" element={<SelfAssessment />} />
           <Route path="/budget-tools" element={<BudgetTools />} />
           <Route path="/warning-signs" element={<WarningSigns />} />
